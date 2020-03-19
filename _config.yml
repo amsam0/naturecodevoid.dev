@@ -1,0 +1,4 @@
+url: "https://naturecodevoid.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/" # the subpath of your site, e.g. /blog
+title: "naturecodevoid" 
+exclude: [README.md, scripts/, _templates/]
