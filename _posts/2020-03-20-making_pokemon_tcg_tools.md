@@ -7,7 +7,7 @@ title: "Making Pokemon TCG Tools"
 ### What's Pokemon TCG Tools?
 
 Pokemon TCG Tools is a website I made for help TCG players improve. You can see it
-[here](https://naturecodevoid.github.io/PokemonTCG_Tools).
+[here](https://naturecodevoid.dev/PokemonTCG_Tools).
 
 ### So, how did I make it?
 
