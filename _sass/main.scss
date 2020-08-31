@@ -1,11 +1,12 @@
 $backgroundColor: #2e2e2e;
 $bodyColor: #ffffff;
-$bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+$bodyFont: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
 
 body {
-  background: $backgroundColor;
-  color: $bodyColor;
-  font-family: $bodyFont;
+    background: $backgroundColor;
+    color: $bodyColor;
+    font-family: $bodyFont;
 }
 
 a {
@@ -38,7 +39,7 @@ nav {
         overflow: hidden;
         //background-color: #333;
     }
-    
+
     li {
         display: inline;
         //border-right: 1px solid #bbb;
