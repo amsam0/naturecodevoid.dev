@@ -17,6 +17,12 @@ _site/**/*
 
 .tags1
 
+.bundle
+.bundle/
+.bundle/*
+.bundle/**
+.bundle/**/*
+
 # File map:
 #   WINDOWS
 #   MACOS

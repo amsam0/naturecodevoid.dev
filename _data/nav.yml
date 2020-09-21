@@ -1,0 +1,5 @@
+- name: Home
+  file: index.md
+
+- name: Projects
+  file: projects.md

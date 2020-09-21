@@ -1,4 +1,4 @@
 cd /D "%~dp0"
 
 cd ../
-jekyll build
+bundle exec jekyll build

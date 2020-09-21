@@ -3,7 +3,7 @@ layout: default
 title: "Projects"
 ---
 
-# {{ page.title }}
+## {{ page.title }}
 
 {% for project in site.data.projects %}
 

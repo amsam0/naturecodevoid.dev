@@ -3,4 +3,4 @@
 cd "$PWD"
 
 cd ../
-jekyll build
+bundle exec jekyll build

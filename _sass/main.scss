@@ -26,18 +26,41 @@ a {
     }
 }
 
+#content {
+    padding-left: 0.55%;
+}
+
+#title {
+    text-align: left;
+    float: left;
+    padding-left: 0.55%;
+    padding-top: 0.2%;
+    margin: 0 auto;
+    font-size: 30px;
+}
+
+footer {
+    padding-left: 0.55%;
+}
+
 nav {
     position: absolute;
-    left: 0px;
+    left: 50%;
     height: 40px;
-    width: 100%;
-    text-align: center;
+    width: 100% - 0.2% - 50%;
+    text-align: right;
+    float: right;
+    overflow: hidden;
+    margin: 0 auto;
     ul {
         list-style-type: none;
-        margin: 0;
+        margin: 0 auto;
         padding: 0;
         overflow: hidden;
         //background-color: #333;
+        padding-left: 1.1%;
+        padding-top: 0.25%;
+        font-size: 30px;
     }
 
     li {
@@ -61,20 +84,4 @@ nav {
             border-right: none;
         }*/
     }
-}
-
-.cardSearch/* div*/ {
-    input {
-        //width: 26%;
-        width: 200px; //15%;
-    }
-
-    button {
-        //width: 200px;
-        width: auto;
-    }
-
-    /*button {
-        width: 26%
-    }*/
 }

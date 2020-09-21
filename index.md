@@ -3,9 +3,9 @@ layout: default
 title: "Home"
 ---
 
-# {{ page.title }}
+## {{ page.title }}
 
-## Welcome to [naturecodevoid.dev]({% link index.md %})!
+### Welcome to [naturecodevoid.dev]({% link index.md %})!
 
 I like creating random projects that don't always make sense, but are fun to make! 😄
 
@@ -13,7 +13,7 @@ I like creating random projects that don't always make sense, but are fun to mak
 
 [Click here to see all my projects!](https://github.com/naturecodevoid?tab=repositories)
 
-### Languages I like:
+#### Languages I like:
 
 -   [Node.js/javascript](https://nodejs.org/)
 -   [Python](https://www.python.org/)
@@ -21,7 +21,7 @@ I like creating random projects that don't always make sense, but are fun to mak
 -   [Java](https://www.oracle.com/java/)
 -   C/C++
 
-### Cool projects you should check out:
+#### Cool projects you should check out:
 
 -   [ct.js game engine](https://ctjs.rocks/)
 -   [CodeSandbox](https://codesandbox.io/)
@@ -31,6 +31,6 @@ I like creating random projects that don't always make sense, but are fun to mak
 -   [Atom](https://atom.io/)
 -   [OpenAI](https://openai.com/)
 
-### Contact me:
+#### Contact me:
 
 Discord: naturecodevoid#6253
