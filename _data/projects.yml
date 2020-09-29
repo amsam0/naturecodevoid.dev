@@ -1,8 +1,8 @@
 - name: ct.js (by CosmoMyzrailGorynych) - An easy to use, 2D game engine.
   url: https://ctjs.rocks
 
-- name: DsPvPv2 - A Minecraft resource pack based on default textures, for everyone.
-  url: https://github.com/naturecodevoid/DsPvPv2
+- name: vanillafault - A Minecraft resource pack based on default textures, for everyone.
+  url: https://github.com/naturecodevoid/vanillafault
 
 - name: JSUtils (aka natures-jsutils) - Random javascript utilities you might find useful.
   url: https://github.com/naturecodevoid/JSUtils
