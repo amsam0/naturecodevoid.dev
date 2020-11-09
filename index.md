@@ -7,7 +7,7 @@ title: "Home"
 
 ### Welcome to [naturecodevoid.dev]({% link index.md %})!
 
-I like creating random projects that don't always make sense, but are fun to make! 😄
+I like working on random projects! 😄
 
 [Click here to see my primary projects!]({% link projects.md %})
 
@@ -24,7 +24,6 @@ I like creating random projects that don't always make sense, but are fun to mak
 #### Cool projects you should check out:
 
 -   [ct.js game engine](https://ctjs.rocks/)
--   [CodeSandbox](https://codesandbox.io/)
 -   [Brave browser](https://brave.com/)
 -   [Expo](https://expo.io/)
 -   [vscode](https://code.visualstudio.com)

@@ -4,6 +4,9 @@
 - name: vanillafault - A Minecraft resource pack based on default textures, for everyone.
   url: https://github.com/naturecodevoid/vanillafault
 
+- name: HypixelUtils - Minecraft mod with random stuff.
+  url: https://github.com/naturecodevoid/HypixelUtils
+
 - name: JSUtils (aka natures-jsutils) - Random javascript utilities you might find useful.
   url: https://github.com/naturecodevoid/JSUtils
 

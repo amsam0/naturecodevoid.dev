@@ -13,10 +13,17 @@
         <meta property="og:type" content="website">
     </head>
     <body>
-        {% include header.html %}
-        <div id="content">
-            {{ content }}
+        <div id="background"></div>
+        <div id="page">
+            <div id="header">
+                {% include header.html %}
+            </div>
+            <div id="content">
+                {{ content }}
+            </div>
+            <div id="footer">
+                {% include footer.html %}
+            </div>
         </div>
-        {% include footer.html %}
     </body>
 </html>
