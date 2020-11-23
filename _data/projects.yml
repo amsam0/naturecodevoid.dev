@@ -1,6 +1,9 @@
 - name: ct.js (by CosmoMyzrailGorynych) - An easy to use, 2D game engine.
   url: https://ctjs.rocks
 
+- name: axolotl - A Minecraft launcher for power users.
+  url: https://github.com/yonderbread/axolotl
+
 - name: vanillafault - A Minecraft resource pack based on default textures, for everyone.
   url: https://github.com/naturecodevoid/vanillafault
 
