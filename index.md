@@ -32,4 +32,46 @@ I like working on random projects! 😄
 
 #### Contact me:
 
-Discord: naturecodevoid#6253
+<script type="text/javascript">
+    function contact() {
+        two = "Discord: ";
+        one = "n" + "a" + "t" + "u" + "r" + "e";
+        three = "c" + "o" + "d" + "e";
+        five = "v" + "o" + "i" + "d";
+        x = 659000845163251 / 246907793;
+        otherSocials = `Twitter: @${one + three + five}`;
+        function run(
+            a = two +
+                one +
+                three +
+                five +
+                "#" +
+                ((96435 * 34248723478) / 1234538965 - (8746921133 % 53) - x).toString(),
+            b = "\n\nOther socials:\n\n",
+        ) {
+            try {
+                alertify
+                    .confirm(
+                        "naturecodevoid.dev",
+                        a,
+                        () => {
+                            setTimeout(() => {
+                                alertify.alert("naturecodevoid.dev", otherSocials, () => {}).set("label", "Ok");
+                            }, 10);
+                        },
+                        () => {},
+                    )
+                    .set("labels", { ok: "Show other socials", cancel: "Ok" });
+            } catch (e) {
+                alert(a + b + otherSocials);
+            }
+        }
+        run();
+    }
+
+    if (window.location.toString().endsWith("#contact")) {
+        window.addEventListener("load", () => setTimeout(contact, 1 * 1000));
+    }
+</script>
+
+<button onclick="contact()">Click to show</button>
