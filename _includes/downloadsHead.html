@@ -4,16 +4,17 @@
             name: "",
             default_version: "",
             project_url: "",
-            no_back: false,
             versions: {
                 : {
                     name: "",
                     url: "",
+                    no_back: false,
 
                     // OR
 
                     name: "",
                     default_url: "",
+                    no_back: false,
                     url: {
                         : {
                             name: "",
@@ -30,11 +31,11 @@
             name: "vanillafault",
             default_version: "normal",
             project_url: "https://github.com/naturecodevoid/vanillafault",
-            no_back: false,
             versions: {
                 normal: {
                     name: "Normal",
                     default_url: "java",
+                    no_back: false,
                     url: {
                         java: {
                             name: "Java",
@@ -51,6 +52,7 @@
                 azula: {
                     name: "Azula Swords",
                     default_url: "java",
+                    no_back: false,
                     url: {
                         java: {
                             name: "Java",
@@ -67,6 +69,7 @@
                 dystel: {
                     name: "Dystel Swords",
                     default_url: "java",
+                    no_back: false,
                     url: {
                         java: {
                             name: "Java",
@@ -83,6 +86,7 @@
                 henry: {
                     name: "Henry's 1.14 default edit Swords",
                     default_url: "java",
+                    no_back: false,
                     url: {
                         java: {
                             name: "Java",
@@ -99,6 +103,7 @@
                 long: {
                     name: "Long Swords",
                     default_url: "java",
+                    no_back: false,
                     url: {
                         java: {
                             name: "Java",
@@ -115,6 +120,7 @@
                 medium: {
                     name: "Medium Swords",
                     default_url: "java",
+                    no_back: false,
                     url: {
                         java: {
                             name: "Java",
@@ -131,6 +137,7 @@
                 short: {
                     name: "Short Swords",
                     default_url: "java",
+                    no_back: false,
                     url: {
                         java: {
                             name: "Java",
@@ -147,6 +154,7 @@
                 short2: {
                     name: "Short Swords and Short Guards",
                     default_url: "java",
+                    no_back: false,
                     url: {
                         java: {
                             name: "Java",
@@ -166,14 +174,15 @@
             name: "ct.js",
             default_version: "stable",
             project_url: "https://ctjs.rocks/",
-            no_back: true,
             versions: {
                 stable: {
                     name: "Stable",
+                    no_back: true,
                     url: "https://ctjs.rocks/download/",
                 },
                 nightly: {
                     name: "Nightly",
+                    no_back: true,
                     url: "https://comigo.itch.io/ct-nightly",
                 },
             },
@@ -218,7 +227,7 @@
                 }
                 url = url.url;
             }
-            redirect(url, download.no_back);
+            redirect(url, version.no_back);
         } else console.debug("Invalid download or redirect canceled!");
     }
 
