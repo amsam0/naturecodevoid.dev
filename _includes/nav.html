@@ -1,3 +1,66 @@
+<script type="text/javascript">
+    window.addEventListener("scroll", function() {
+        const navbar = document.getElementsByClassName("nav")[0];
+        const add = " w3-white";
+        if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+            if (!navbar.className.includes(add)) navbar.className += add;
+        } else navbar.className = navbar.className.replace(add, "");
+    });
+
+    let canChange = true;
+    const run = () =>
+        setTimeout(() => {
+            canChange = true;
+        }, 75);
+    function toggleNav() {
+        if (canChange) {
+            var element = document.getElementsByClassName("nav-mobile")[0];
+            if (!element.className.includes("w3-show")) {
+                element.className += " w3-show";
+            } else {
+                element.className = element.className.replace(" w3-show", "");
+            }
+            console.debug("Toggled nav");
+            canChange = false;
+            run();
+        } else console.debug("Cant toggle nav");
+    }
+</script>
+
+<div class="nav-div w3-top w3-left w3-card">
+    <div class="nav w3-bar">
+        <a href="{% link index.md %}" class="w3-bar-item w3-button w3-left"
+            ><i class="fas fa-tree"></i> NATURECODEVOID.DEV</a
+        >
+        <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" onclick="toggleNav()">
+            <i class="fas fa-bars"></i>
+        </a>
+        <a href="{% link index.md %}" class="w3-bar-item w3-button w3-hide-small w3-right"
+            ><i class="fas fa-home"></i> HOME</a
+        >
+        <a href="{% link projects.md %}" class="w3-bar-item w3-button w3-hide-small w3-right"
+            ><i class="fas fa-clipboard-list"></i> PROJECTS</a
+        >
+        <a href="{% link downloads.html %}" class="w3-bar-item w3-button w3-hide-small w3-right"
+            ><i class="fas fa-download"></i> DOWNLOADS</a
+        >
+    </div>
+
+    <!-- Mobile -->
+    <div class="nav-mobile w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+        <a href="{% link downloads.html %}" class="w3-bar-item w3-button w3-left" onclick="toggleNav()"
+            ><i class="fas fa-download"></i> DOWNLOADS</a
+        >
+        <a href="{% link projects.md %}" class="w3-bar-item w3-button w3-left" onclick="toggleNav()"
+            ><i class="fas fa-clipboard-list"></i> PROJECTS</a
+        >
+        <a href="{% link index.md %}" class="w3-bar-item w3-button w3-left" onclick="toggleNav()"
+            ><i class="fas fa-home"></i> HOME</a
+        >
+    </div>
+</div>
+
+<!--
 <nav>
     <ul>
         {% for link in site.data.nav %}
@@ -10,3 +73,4 @@
     </ul>
 </nav>
 <br />
+-->

@@ -28,7 +28,7 @@
 
     const downloads = {
         vanillafault: {
-            name: "vanillafault",
+            name: "vanillafault (Minecraft texture pack)",
             default_version: "normal",
             project_url: "https://github.com/naturecodevoid/vanillafault",
             versions: {
@@ -171,7 +171,7 @@
             },
         },
         ctjs: {
-            name: "ct.js",
+            name: "ct.js (Game engine)",
             default_version: "stable",
             project_url: "https://ctjs.rocks/",
             versions: {
@@ -189,9 +189,6 @@
         },
     };
 
-    // TODO: check the url args for any versions/names and redirect if there is one
-    // then loop over downloads and add them to the html list
-
     const urlParameters = new URLSearchParams(window.location.search);
 
     let redirected = false;
@@ -202,7 +199,7 @@
         if (!noBack)
             setTimeout(() => {
                 window.location.href = oldUrl + "&cancel";
-            }, 1000);
+            }, 2000);
     };
 
     if (urlParameters.get("name")) {

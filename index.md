@@ -15,11 +15,13 @@ I like working on random projects! 😄
 
 #### Languages I like:
 
+<!-- <i class="fab fa-js-square"></i> <i class="fab fa-python"></i> <i class="fab fa-html5"></i> <i class="fab fa-java"></i> -->
+
 -   [Node.js/javascript](https://nodejs.org/)
 -   [Python](https://www.python.org/)
--   HTML/CSS
+-   [HTML/CSS](https://developer.mozilla.org/en-US/docs/Web/HTML)
 -   [Java](https://www.oracle.com/java/)
--   C/C++
+-   [C/C++](https://en.wikipedia.org/wiki/C%2B%2B)
 
 #### Cool projects you should check out:
 
@@ -83,4 +85,4 @@ I like working on random projects! 😄
     }
 </script>
 
-<button onclick="contact()">Click to show</button>
+<button onclick="contact()" class="w3-button w3-white">Click to show</button>
