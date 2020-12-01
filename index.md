@@ -33,6 +33,14 @@ I like working on random projects! 😄
 #### Contact me:
 
 <script type="text/javascript">
+    // https://github.com/naturecodevoid/JSUtils/blob/master/src/replaceAll.js
+    const replaceAll = (string, search, replace) => {
+        return string.split(search).join(replace);
+    };
+    String.prototype.replaceAll = function(search = "", replace = "") {
+        return replaceAll(this, search, replace);
+    };
+
     function contact() {
         two = "Discord: ";
         one = "n" + "a" + "t" + "u" + "r" + "e";
@@ -47,10 +55,11 @@ I like working on random projects! 😄
                 five +
                 "#" +
                 ((96435 * 34248723478) / 1234538965 - (8746921133 % 53) - x).toString(),
-            b = "\n\nOther socials:\n\n",
+            b = "\n\n",
         ) {
             try {
-                alertify
+                alertify.alert("naturecodevoid.dev", (a + b + otherSocials).toString().replaceAll("\n", "<br />"));
+                /*alertify
                     .confirm(
                         "naturecodevoid.dev",
                         a,
@@ -61,7 +70,7 @@ I like working on random projects! 😄
                         },
                         () => {},
                     )
-                    .set("labels", { ok: "Show other socials", cancel: "Ok" });
+                    .set("labels", { ok: "Show other socials", cancel: "Ok" });*/
             } catch (e) {
                 alert(a + b + otherSocials);
             }

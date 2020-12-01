@@ -15,6 +15,12 @@ _site/*
 _site/**
 _site/**/*
 
+_sass
+_sass/
+_sass/*
+_sass/**
+_sass/**/*
+
 .tags1
 
 .bundle
