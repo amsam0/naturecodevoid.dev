@@ -236,7 +236,7 @@
             if (downloads.hasOwnProperty(key)) {
                 const element = downloads[key];
                 const root = document.createElement("li");
-                root.innerHTML += `<a href="${element.project_url}">${element.name}</a>`;
+                root.innerHTML += `<a href="${element.project_url}" id="${key}">${element.name}</a>`;
                 const rootUl = document.createElement("ul");
 
                 for (const key2 in element.versions)
