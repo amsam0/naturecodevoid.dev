@@ -26,6 +26,7 @@ I like working on random projects! 😄
 #### Cool projects you should check out:
 
 -   [ct.js game engine](https://ctjs.rocks/)
+-   [Wynncraft](https://wynncraft.com/)
 -   [Brave browser](https://brave.com/)
 -   [Expo](https://expo.io/)
 -   [vscode](https://code.visualstudio.com)
