@@ -27,6 +27,8 @@
     */
 
     const downloads = {
+        // gets filled out later
+        hypixelutils: {},
         vanillafault: {
             name: "vanillafault (Minecraft texture pack)",
             default_version: "normal",
@@ -189,48 +191,7 @@
         },
     };
 
-    const urlParameters = new URLSearchParams(window.location.search);
-
-    let redirected = false;
-    const redirect = (url, noBack = false) => {
-        redirected = true;
-        const oldUrl = window.location.href;
-        window.location.href = url;
-        if (!noBack)
-            setTimeout(() => {
-                window.location.href = oldUrl + "&cancel";
-            }, 2000);
-    };
-
-    if (urlParameters.get("name")) {
-        let url;
-        let download = downloads[urlParameters.get("name").toString()];
-        if (download && (urlParameters.get("cancel") === null ? true : false)) {
-            let version =
-                urlParameters.get("version") === null
-                    ? download.versions[download.default_version]
-                    : download.versions[urlParameters.get("version").toString()];
-            if (!version) {
-                version = download.versions[download.default_version];
-            }
-            url = version.url;
-            if (typeof url === "object") {
-                url =
-                    urlParameters.get("url") === null
-                        ? version.url[version.default_url]
-                        : version.url[urlParameters.get("url").toString()];
-                if (!url) {
-                    url = version.url[version.default_url];
-                }
-                url = url.url;
-            }
-            redirect(url, version.no_back);
-        } else console.debug("Invalid download or redirect canceled!");
-    }
-
-    window.addEventListener("load", () => {
-        //if (!redirected) {
-        //console.debug("loaded without redirect");
+    const genHtml = () => {
         const list = document.getElementById("downloads");
         for (const key in downloads)
             if (downloads.hasOwnProperty(key)) {
@@ -268,7 +229,97 @@
 
                 root.appendChild(rootUl);
                 list.appendChild(root);
+
+                root.innerHTML += "<br />";
             }
         //} else console.debug("loaded with redirect, maybe something went wrong when redirecting?");
+    };
+
+    let loaded = false;
+    let gottenHypixelUtils = false;
+
+    // HypixelUtils download
+    {
+        const releaseUrl = "https://api.github.com/repos/naturecodevoiddev/HypixelUtils/releases/latest";
+
+        window.fetch(releaseUrl).then((r) => {
+            r.json().then((data) => {
+                //console.debug(data);
+                const asset = data.assets[0];
+                const downloadUrl = asset.browser_download_url;
+
+                downloads["hypixelutils"] = {
+                    name: "HypixelUtils (1.8.9 mod)",
+                    default_version: "stable",
+                    project_url: "https://github.com/naturecodevoid/HypixelUtils",
+                    versions: {
+                        stable: {
+                            name: "Stable jar download",
+                            no_back: false,
+                            url: downloadUrl,
+                        },
+                    },
+                };
+
+                //console.debug(downloads["hypixelutils"]);
+
+                gottenHypixelUtils = true;
+                if (loaded) {
+                    redirect();
+                    genHtml();
+                }
+            });
+        });
+    }
+
+    // Redirect
+    const redirect = () => {
+        const urlParameters = new URLSearchParams(window.location.search);
+
+        let redirected = false;
+        const redirect = (url, noBack = false) => {
+            redirected = true;
+            const oldUrl = window.location.href;
+            window.location.href = url;
+            if (!noBack)
+                setTimeout(() => {
+                    window.location.href = oldUrl + "&cancel";
+                }, 2000);
+        };
+
+        if (urlParameters.get("name")) {
+            let url;
+            let download = downloads[urlParameters.get("name").toString()];
+            if (download && (urlParameters.get("cancel") === null ? true : false)) {
+                let version =
+                    urlParameters.get("version") === null
+                        ? download.versions[download.default_version]
+                        : download.versions[urlParameters.get("version").toString()];
+                if (!version) {
+                    version = download.versions[download.default_version];
+                }
+                url = version.url;
+                if (typeof url === "object") {
+                    url =
+                        urlParameters.get("url") === null
+                            ? version.url[version.default_url]
+                            : version.url[urlParameters.get("url").toString()];
+                    if (!url) {
+                        url = version.url[version.default_url];
+                    }
+                    url = url.url;
+                }
+                redirect(url, version.no_back);
+            } else console.debug("Invalid download or redirect canceled!");
+        }
+    };
+
+    window.addEventListener("load", () => {
+        //if (!redirected) {
+        //console.debug("loaded without redirect");
+        loaded = true;
+        if (!gottenHypixelUtils) return;
+        redirect();
+        genHtml();
     });
 </script>
