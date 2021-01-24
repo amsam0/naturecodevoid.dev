@@ -1,8 +1,0 @@
-- name: Projects
-  file: projects.md
-
-- name: Downloads
-  file: downloads.html
-
-- name: Home
-  file: index.md

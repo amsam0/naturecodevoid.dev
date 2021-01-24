@@ -9,18 +9,16 @@ title: "Home"
 
 I like working on random projects! 😄
 
-[Click here to see my primary projects!]({% link projects.md %})
+[Click here to see my primary projects!]({{ "/projects/" | relative_url }})
 
-[Click here to see all my projects!](https://github.com/naturecodevoid?tab=repositories)
+[Click here to see all my repositores!](https://github.com/naturecodevoid?tab=repositories)
 
 #### Languages I like:
 
-<!-- <i class="fab fa-js-square"></i> <i class="fab fa-python"></i> <i class="fab fa-html5"></i> <i class="fab fa-java"></i> -->
-
 -   [Node.js/javascript](https://nodejs.org/)
 -   [Python](https://www.python.org/)
--   [HTML/CSS](https://developer.mozilla.org/en-US/docs/Web/HTML)
 -   [Java](https://www.oracle.com/java/)
+-   [HTML/CSS](https://developer.mozilla.org/en-US/docs/Web/HTML)
 -   [C/C++](https://en.wikipedia.org/wiki/C%2B%2B)
 
 #### Cool projects you should check out:
@@ -45,14 +43,15 @@ I like working on random projects! 😄
     };
 
     function contact() {
-        two = "Discord: ";
-        one = "n" + "a" + "t" + "u" + "r" + "e";
-        three = "c" + "o" + "d" + "e";
-        five = "v" + "o" + "i" + "d";
-        x = 659000845163251 / 246907793;
-        otherSocials = `Twitter: @${one + three + five}`;
+        const two = "Discord: ";
+        const one = "n" + "a" + "t" + "u" + "r" + "e";
+        const three = "c" + "o" + "d" + "e";
+        const five = "v" + "o" + "i" + "d";
+        const x = 659000845163251 / 246907793;
+        const otherSocials = `<i class="fab fa-twitter"></i> Twitter: @${one + three + five}`;
         function run(
-            a = two +
+            a = '<i class="fab fa-discord"></i> ' +
+                two +
                 one +
                 three +
                 five +
@@ -61,7 +60,7 @@ I like working on random projects! 😄
             b = "\n\n",
         ) {
             try {
-                alertify.alert("naturecodevoid.dev", (a + b + otherSocials).toString().replaceAll("\n", "<br />"));
+                alertify.alert("Contact me", (a + b + otherSocials).toString().replaceAll("\n", "<br />"));
                 /*alertify
                     .confirm(
                         "naturecodevoid.dev",
@@ -86,4 +85,4 @@ I like working on random projects! 😄
     }
 </script>
 
-<button onclick="contact()" class="w3-button w3-white">Click to show</button>
+<button onclick="contact();" class="w3-button w3-white">Click to show</button>
