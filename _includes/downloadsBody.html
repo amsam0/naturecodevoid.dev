@@ -46,7 +46,6 @@
 
                 root.innerHTML += "<br />";
             }
-        //} else console.debug("loaded with redirect, maybe something went wrong when redirecting?");
     };
 
     let loaded = false;
@@ -58,7 +57,6 @@
 
         window.fetch(releaseUrl).then((r) => {
             r.json().then((data) => {
-                //console.debug(data);
                 const asset = data.assets[0];
                 const downloadUrl = asset.browser_download_url;
 
@@ -74,8 +72,6 @@
                         },
                     },
                 };
-
-                //console.debug(downloads["hypixelutils"]);
 
                 gottenHypixelUtils = true;
                 if (loaded) {
@@ -129,8 +125,6 @@
     };
 
     window.addEventListener("load", () => {
-        //if (!redirected) {
-        //console.debug("loaded without redirect");
         loaded = true;
         if (!gottenHypixelUtils) return;
         redirect();
