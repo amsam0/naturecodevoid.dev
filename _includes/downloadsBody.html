@@ -1,208 +1,22 @@
+<!-- Used in downloads/index.html -->
+
+{% include downloadsData.html %}
+
 <script type="text/javascript">
-    /*
-        : {
-            name: "",
-            default_version: "",
-            project_url: "",
-            versions: {
-                : {
-                    name: "",
-                    url: "",
-                    no_back: false,
-
-                    // OR
-
-                    name: "",
-                    default_url: "",
-                    no_back: false,
-                    url: {
-                        : {
-                            name: "",
-                            url: "",
-                        },
-                    },
-                },
-            }
-        },
-    */
-
-    const downloads = {
-        // gets filled out later
-        hypixelutils: {},
-        vanillafault: {
-            name: "vanillafault (Minecraft texture pack)",
-            default_version: "normal",
-            project_url: "https://github.com/naturecodevoid/vanillafault",
-            versions: {
-                normal: {
-                    name: "Normal",
-                    default_url: "java",
-                    no_back: true,
-                    url: {
-                        java: {
-                            name: "Java",
-                            url:
-                                "https://github.com/naturecodevoid/vanillafault/blob/master/out/vanillafault%20Java.zip?raw=true",
-                        },
-                        bedrock: {
-                            name: "Bedrock",
-                            url:
-                                "https://github.com/naturecodevoid/vanillafault/blob/master/out/vanillafault%20Bedrock.mcpack?raw=true",
-                        },
-                    },
-                },
-                azula: {
-                    name: "Azula Swords",
-                    default_url: "java",
-                    no_back: true,
-                    url: {
-                        java: {
-                            name: "Java",
-                            url:
-                                "https://github.com/naturecodevoid/vanillafault/blob/master/out/vanillafault%20(Azula%20Swords)%20Java.zip?raw=true",
-                        },
-                        bedrock: {
-                            name: "Bedrock",
-                            url:
-                                "https://github.com/naturecodevoid/vanillafault/blob/master/out/vanillafault%20(Azula%20Swords)%20Bedrock.mcpack?raw=true",
-                        },
-                    },
-                },
-                dystel: {
-                    name: "Dystel Swords",
-                    default_url: "java",
-                    no_back: true,
-                    url: {
-                        java: {
-                            name: "Java",
-                            url:
-                                "https://github.com/naturecodevoid/vanillafault/blob/master/out/vanillafault%20(Dystel%20Swords)%20Java.zip?raw=true",
-                        },
-                        bedrock: {
-                            name: "Bedrock",
-                            url:
-                                "https://github.com/naturecodevoid/vanillafault/blob/master/out/vanillafault%20(Dystel%20Swords)%20Bedrock.mcpack?raw=true",
-                        },
-                    },
-                },
-                henry: {
-                    name: "Henry's 1.14 default edit Swords",
-                    default_url: "java",
-                    no_back: true,
-                    url: {
-                        java: {
-                            name: "Java",
-                            url:
-                                "https://github.com/naturecodevoid/vanillafault/blob/master/out/vanillafault%20(Henry's%201.14%20default%20edit%20Swords)%20Java.zip?raw=true",
-                        },
-                        bedrock: {
-                            name: "Bedrock",
-                            url:
-                                "https://github.com/naturecodevoid/vanillafault/blob/master/out/vanillafault%20(Henry's%201.14%20default%20edit%20Swords)%20Bedrock.mcpack?raw=true",
-                        },
-                    },
-                },
-                long: {
-                    name: "Long Swords",
-                    default_url: "java",
-                    no_back: true,
-                    url: {
-                        java: {
-                            name: "Java",
-                            url:
-                                "https://github.com/naturecodevoid/vanillafault/blob/master/out/vanillafault%20(Long%20Swords)%20Java.zip?raw=true",
-                        },
-                        bedrock: {
-                            name: "Bedrock",
-                            url:
-                                "https://github.com/naturecodevoid/vanillafault/blob/master/out/vanillafault%20(Long%20Swords)%20Bedrock.mcpack?raw=true",
-                        },
-                    },
-                },
-                medium: {
-                    name: "Medium Swords",
-                    default_url: "java",
-                    no_back: true,
-                    url: {
-                        java: {
-                            name: "Java",
-                            url:
-                                "https://github.com/naturecodevoid/vanillafault/blob/master/out/vanillafault%20(Medium%20Swords)%20Java.zip?raw=true",
-                        },
-                        bedrock: {
-                            name: "Bedrock",
-                            url:
-                                "https://github.com/naturecodevoid/vanillafault/blob/master/out/vanillafault%20(Medium%20Swords)%20Bedrock.mcpack?raw=true",
-                        },
-                    },
-                },
-                short: {
-                    name: "Short Swords",
-                    default_url: "java",
-                    no_back: true,
-                    url: {
-                        java: {
-                            name: "Java",
-                            url:
-                                "https://github.com/naturecodevoid/vanillafault/blob/master/out/vanillafault%20(Short%20Swords)%20Java.zip?raw=true",
-                        },
-                        bedrock: {
-                            name: "Bedrock",
-                            url:
-                                "https://github.com/naturecodevoid/vanillafault/blob/master/out/vanillafault%20(Short%20Swords)%20Bedrock.mcpack?raw=true",
-                        },
-                    },
-                },
-                short2: {
-                    name: "Short Swords and Short Guards",
-                    default_url: "java",
-                    no_back: true,
-                    url: {
-                        java: {
-                            name: "Java",
-                            url:
-                                "https://github.com/naturecodevoid/vanillafault/blob/master/out/vanillafault%20(Short%20Swords%20and%20Short%20Guards)%20Java.zip?raw=true",
-                        },
-                        bedrock: {
-                            name: "Bedrock",
-                            url:
-                                "https://github.com/naturecodevoid/vanillafault/blob/master/out/vanillafault%20(Short%20Swords%20and%20Short%20Guards)%20Bedrock.mcpack?raw=true",
-                        },
-                    },
-                },
-            },
-        },
-        ctjs: {
-            name: "ct.js (Game engine)",
-            default_version: "stable",
-            project_url: "https://ctjs.rocks/",
-            versions: {
-                stable: {
-                    name: "Stable",
-                    no_back: true,
-                    url: "https://ctjs.rocks/download/",
-                },
-                nightly: {
-                    name: "Nightly",
-                    no_back: true,
-                    url: "https://comigo.itch.io/ct-nightly",
-                },
-            },
-        },
-    };
-
     const genHtml = () => {
         const list = document.getElementById("downloads");
         for (const key in downloads)
             if (downloads.hasOwnProperty(key)) {
                 const element = downloads[key];
                 const root = document.createElement("li");
-                root.innerHTML += `<a href="${element.project_url}" id="${key}">${element.name}</a>`;
+                root.innerHTML += `<a href="${element.project_url}" id="${key}" target="_blank">${element.name} &nbsp;<i class="fas fa-external-link-alt"></i></a>`;
                 const rootUl = document.createElement("ul");
 
                 for (const key2 in element.versions)
                     if (element.versions.hasOwnProperty(key2)) {
                         const element2 = element.versions[key2];
+                        const target = element2.target_blank ? ` target="_blank"` : "";
+                        const target2 = element2.target_blank ? ` &nbsp;<i class="fas fa-external-link-alt"></i>` : "";
                         if (typeof element2.url === "object") {
                             const li = document.createElement("li");
                             const ul = document.createElement("ul");
@@ -213,7 +27,7 @@
                                     const element3 = element2.url[key3];
 
                                     const li2 = document.createElement("li");
-                                    li2.innerHTML += `<a href="${element3.url}">${element3.name}</a>`;
+                                    li2.innerHTML += `<a href="${element3.url}"${target}>${element3.name}${target2}</a>`;
                                     ul.appendChild(li2);
                                 }
                             }
@@ -222,7 +36,7 @@
                             rootUl.appendChild(li);
                         } else {
                             const li = document.createElement("li");
-                            li.innerHTML += `<a href="${element2.url}">${element2.name}</a>`;
+                            li.innerHTML += `<a href="${element2.url}"${target}>${element2.name}${target2}</a>`;
                             rootUl.appendChild(li);
                         }
                     }
@@ -249,9 +63,9 @@
                 const downloadUrl = asset.browser_download_url;
 
                 downloads["hypixelutils"] = {
-                    name: "HypixelUtils (1.8.9 mod)",
+                    name: "HypixelUtils (1.8.9 mc mod)",
                     default_version: "stable",
-                    project_url: "https://github.com/naturecodevoid/HypixelUtils",
+                    project_url: "/projects/hypixelutils",
                     versions: {
                         stable: {
                             name: "Stable jar download",

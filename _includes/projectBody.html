@@ -1,5 +1,19 @@
+<!-- Used for each project -->
+
 <h4>
-    <a href='{{ "/projects/" | relative_url }}'> <i class="fas fa-angle-left"></i> Back to all projects </a>
+    <a href='{{ "/projects" | relative_url }}'> <i class="fas fa-angle-left"></i> Back to all projects </a>
 </h4>
 
 <h2>{{ page.title }}</h2>
+
+<h3>
+    {% for button in page.buttons %} {% if button.no_target_blank == true %}
+
+    <a href="{{ button.url }}" style="padding-right: 4px"> <i class="{{ button.icon }}"></i></a>
+
+    {% else %}
+
+    <a href="{{ button.url }}" style="padding-right: 4px" target="_blank"> <i class="{{ button.icon }}"></i></a>
+
+    {% endif %} {% endfor %}
+</h3>

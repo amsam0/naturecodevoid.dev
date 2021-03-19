@@ -5,31 +5,31 @@ title: "Home"
 
 ## {{ page.title }}
 
-### Welcome to [naturecodevoid.dev]({% link index.md %})!
+### Welcome to naturecodevoid.dev!
 
 I like working on random projects! 😄
 
-[Click here to see my primary projects!]({{ "/projects/" | relative_url }})
+[Click here to see my primary projects!]({{ "/projects" | relative_url }})
 
-[Click here to see all my repositores!](https://github.com/naturecodevoid?tab=repositories)
+<a href="https://github.com/naturecodevoid?tab=repositories" target="_blank">Click here to see all my repositores!</a>
 
 #### Languages I like:
 
--   [Node.js/javascript](https://nodejs.org/)
--   [Python](https://www.python.org/)
--   [Java](https://www.oracle.com/java/)
--   [HTML/CSS](https://developer.mozilla.org/en-US/docs/Web/HTML)
--   [C/C++](https://en.wikipedia.org/wiki/C%2B%2B)
+-   <a href="https://nodejs.org" target="_blank">Node.js/JavaScript</a>
+-   <a href="https://www.typescriptlang.org" target="_blank">TypeScript</a>
+-   <a href="https://www.oracle.com/java" target="_blank">Java</a>
+-   <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML/CSS</a>
+-   <a href="https://www.python.org" target="_blank">Python</a>
 
 #### Cool projects you should check out:
 
--   [ct.js game engine](https://ctjs.rocks/)
--   [Wynncraft](https://wynncraft.com/)
--   [Brave browser](https://brave.com/)
--   [Expo](https://expo.io/)
--   [vscode](https://code.visualstudio.com)
--   [Atom](https://atom.io/)
--   [OpenAI](https://openai.com/)
+-   <a href="https://ctjs.rocks/" target="_blank">ct.js game engine</a>
+-   <a href="https://wynncraft.com" target="_blank">Wynncraft</a>
+-   <a href="https://brave.com" target="_blank">Brave browser</a>
+-   <a href="https://expo.io" target="_blank">Expo</a>
+-   <a href="https://code.visualstudio.com" target="_blank">vscode</a>
+-   <a href="https://atom.io" target="_blank">Atom</a>
+-   <a href="https://openai.com" target="_blank">OpenAI</a>
 
 #### Contact me:
 
@@ -81,7 +81,7 @@ I like working on random projects! 😄
     }
 
     if (window.location.toString().endsWith("#contact")) {
-        window.addEventListener("load", () => setTimeout(contact, 1 * 1000));
+        window.addEventListener("load", () => setTimeout(contact, 1 * 500));
     }
 </script>
 
