@@ -1,0 +1,207 @@
+<!-- Used in downloadsBody.html -->
+
+<script type="text/javascript">
+    /*
+        : {
+            name: "",
+            default_version: "",
+            project_url: "",
+            versions: {
+                : {
+                    name: "",
+                    url: "",
+                    no_back: false,
+                    target_blank: false,
+
+                    // OR
+
+                    name: "",
+                    default_url: "",
+                    no_back: false,
+                    target_blank: false,
+                    url: {
+                        : {
+                            name: "",
+                            url: "",
+                        },
+                    },
+                },
+            }
+        },
+    */
+
+    const downloads = {
+        // gets filled out later
+        hypixelutils: {},
+        vanillafault: {
+            name: "vanillafault (Minecraft texture pack)",
+            default_version: "normal",
+            project_url: "/projects/vanillafault",
+            versions: {
+                normal: {
+                    name: "Normal",
+                    default_url: "java",
+                    no_back: true,
+                    target_blank: false,
+                    url: {
+                        java: {
+                            name: "Java",
+                            url:
+                                "https://github.com/naturecodevoid/vanillafault/blob/master/out/vanillafault%20Java.zip?raw=true",
+                        },
+                        bedrock: {
+                            name: "Bedrock",
+                            url:
+                                "https://github.com/naturecodevoid/vanillafault/blob/master/out/vanillafault%20Bedrock.mcpack?raw=true",
+                        },
+                    },
+                },
+                azula: {
+                    name: "Azula Swords",
+                    default_url: "java",
+                    no_back: true,
+                    target_blank: false,
+                    url: {
+                        java: {
+                            name: "Java",
+                            url:
+                                "https://github.com/naturecodevoid/vanillafault/blob/master/out/vanillafault%20(Azula%20Swords)%20Java.zip?raw=true",
+                        },
+                        bedrock: {
+                            name: "Bedrock",
+                            url:
+                                "https://github.com/naturecodevoid/vanillafault/blob/master/out/vanillafault%20(Azula%20Swords)%20Bedrock.mcpack?raw=true",
+                        },
+                    },
+                },
+                dystel: {
+                    name: "Dystel Swords",
+                    default_url: "java",
+                    no_back: true,
+                    target_blank: false,
+                    url: {
+                        java: {
+                            name: "Java",
+                            url:
+                                "https://github.com/naturecodevoid/vanillafault/blob/master/out/vanillafault%20(Dystel%20Swords)%20Java.zip?raw=true",
+                        },
+                        bedrock: {
+                            name: "Bedrock",
+                            url:
+                                "https://github.com/naturecodevoid/vanillafault/blob/master/out/vanillafault%20(Dystel%20Swords)%20Bedrock.mcpack?raw=true",
+                        },
+                    },
+                },
+                henry: {
+                    name: "Henry's 1.14 default edit Swords",
+                    default_url: "java",
+                    no_back: true,
+                    target_blank: false,
+                    url: {
+                        java: {
+                            name: "Java",
+                            url:
+                                "https://github.com/naturecodevoid/vanillafault/blob/master/out/vanillafault%20(Henry's%201.14%20default%20edit%20Swords)%20Java.zip?raw=true",
+                        },
+                        bedrock: {
+                            name: "Bedrock",
+                            url:
+                                "https://github.com/naturecodevoid/vanillafault/blob/master/out/vanillafault%20(Henry's%201.14%20default%20edit%20Swords)%20Bedrock.mcpack?raw=true",
+                        },
+                    },
+                },
+                long: {
+                    name: "Long Swords",
+                    default_url: "java",
+                    no_back: true,
+                    target_blank: false,
+                    url: {
+                        java: {
+                            name: "Java",
+                            url:
+                                "https://github.com/naturecodevoid/vanillafault/blob/master/out/vanillafault%20(Long%20Swords)%20Java.zip?raw=true",
+                        },
+                        bedrock: {
+                            name: "Bedrock",
+                            url:
+                                "https://github.com/naturecodevoid/vanillafault/blob/master/out/vanillafault%20(Long%20Swords)%20Bedrock.mcpack?raw=true",
+                        },
+                    },
+                },
+                medium: {
+                    name: "Medium Swords",
+                    default_url: "java",
+                    no_back: true,
+                    target_blank: false,
+                    url: {
+                        java: {
+                            name: "Java",
+                            url:
+                                "https://github.com/naturecodevoid/vanillafault/blob/master/out/vanillafault%20(Medium%20Swords)%20Java.zip?raw=true",
+                        },
+                        bedrock: {
+                            name: "Bedrock",
+                            url:
+                                "https://github.com/naturecodevoid/vanillafault/blob/master/out/vanillafault%20(Medium%20Swords)%20Bedrock.mcpack?raw=true",
+                        },
+                    },
+                },
+                short: {
+                    name: "Short Swords",
+                    default_url: "java",
+                    no_back: true,
+                    target_blank: false,
+                    url: {
+                        java: {
+                            name: "Java",
+                            url:
+                                "https://github.com/naturecodevoid/vanillafault/blob/master/out/vanillafault%20(Short%20Swords)%20Java.zip?raw=true",
+                        },
+                        bedrock: {
+                            name: "Bedrock",
+                            url:
+                                "https://github.com/naturecodevoid/vanillafault/blob/master/out/vanillafault%20(Short%20Swords)%20Bedrock.mcpack?raw=true",
+                        },
+                    },
+                },
+                short2: {
+                    name: "Short Swords and Short Guards",
+                    default_url: "java",
+                    no_back: true,
+                    target_blank: false,
+                    url: {
+                        java: {
+                            name: "Java",
+                            url:
+                                "https://github.com/naturecodevoid/vanillafault/blob/master/out/vanillafault%20(Short%20Swords%20and%20Short%20Guards)%20Java.zip?raw=true",
+                        },
+                        bedrock: {
+                            name: "Bedrock",
+                            url:
+                                "https://github.com/naturecodevoid/vanillafault/blob/master/out/vanillafault%20(Short%20Swords%20and%20Short%20Guards)%20Bedrock.mcpack?raw=true",
+                        },
+                    },
+                },
+            },
+        },
+        ctjs: {
+            name: "ct.js (Game engine)",
+            default_version: "stable",
+            project_url: "https://ctjs.rocks",
+            versions: {
+                stable: {
+                    name: "Stable",
+                    no_back: true,
+                    target_blank: true,
+                    url: "https://ctjs.rocks/download",
+                },
+                nightly: {
+                    name: "Nightly",
+                    no_back: true,
+                    target_blank: true,
+                    url: "https://comigo.itch.io/ct-nightly",
+                },
+            },
+        },
+    };
+</script>
