@@ -7,31 +7,31 @@ title: "Home"
 
 ### Welcome to naturecodevoid.dev!
 
-I like working on random projects! 😄
+I like coding and gaming. 😃
 
-[Click here to see my primary projects!]({{ "/projects" | relative_url }})
+Main languages: TypeScript/JavaScript, Java, Python
 
-<a href="https://github.com/naturecodevoid?tab=repositories" target="_blank">Click here to see all my repositores!</a>
+### Stuff I've worked on
 
-#### Languages I like:
+#### <img src="https://raw.githubusercontent.com/naturecodevoid/naturecodevoid/main/assets/repo.svg"> [naturecodevoid](https://github.com/naturecodevoid) / [RandomTextGenerator](https://github.com/naturecodevoid/RandomTextGenerator#readme)
 
--   <a href="https://nodejs.org" target="_blank">Node.js/JavaScript</a>
--   <a href="https://www.typescriptlang.org" target="_blank">TypeScript</a>
--   <a href="https://www.oracle.com/java" target="_blank">Java</a>
--   <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML/CSS</a>
--   <a href="https://www.python.org" target="_blank">Python</a>
+A script to generate a random sequence of characters.
 
-#### Cool projects you should check out:
+#### <img src="https://raw.githubusercontent.com/naturecodevoid/naturecodevoid/main/assets/repo.svg"> [ct-js](https://github.com/ct-js) / [ct-js](https://github.com/ct-js/ct-js#readme)
 
--   <a href="https://ctjs.rocks/" target="_blank">ct.js game engine</a>
--   <a href="https://wynncraft.com" target="_blank">Wynncraft</a>
--   <a href="https://brave.com" target="_blank">Brave browser</a>
--   <a href="https://expo.io" target="_blank">Expo</a>
--   <a href="https://code.visualstudio.com" target="_blank">vscode</a>
--   <a href="https://atom.io" target="_blank">Atom</a>
--   <a href="https://openai.com" target="_blank">OpenAI</a>
+An easy to use 2D game engine.
 
-#### Contact me:
+#### <img src="https://raw.githubusercontent.com/naturecodevoid/naturecodevoid/main/assets/repo.svg"> [naturecodevoiddev](https://github.com/naturecodevoiddev) / [HypixelUtils](https://github.com/naturecodevoiddev/HypixelUtils#readme)
+
+Minecraft 1.8.9 forge mod with random stuff.
+
+#### <img src="https://raw.githubusercontent.com/naturecodevoid/naturecodevoid/main/assets/repo.svg"> [naturecodevoid](https://github.com/naturecodevoid) / [hide-username](https://github.com/naturecodevoid/hide-username#readme)
+
+Utility to replace all characters of the current user's username with an asterisk
+
+##### [More stuff](https://naturecodevoid.dev/projects#other)
+
+### Contact me
 
 <script type="text/javascript">
     function contact() {

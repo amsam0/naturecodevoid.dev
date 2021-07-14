@@ -1,0 +1,5 @@
+- name: MC-Utilities - A collection of utilities to use for minecraft.
+  url: /projects/mcutilities
+
+- name: vanillafault - A Minecraft resource pack based on default textures, for everyone.
+  url: /projects/vanillafault
