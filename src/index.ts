@@ -1,7 +1,6 @@
 // TODO: make indicator to scroll up/down for more after a few seconds of no scrolling
-// TODO: add all meta stuff from old website
 
-{
+window.addEventListener("load", () => {
     // const socials = document.getElementsByClassName("social");
 
     const $ = (id: string) => document.getElementById(id);
@@ -182,16 +181,14 @@
         tools();
     };
 
-    window.addEventListener("load", () => {
-        $("timestamp")!.innerHTML = $("timestamp")!.innerHTML.replace(
-            `<span style="color: #0095ff; text-decoration: none">Source</span>`,
-            `<a href="https://github.com/naturecodevoid/timestamp" target="_blank" style="color: #0095ff; text-decoration: none">Source</a>`,
-        );
-        $("randomtext")!.innerHTML = $("randomtext")!.innerHTML.replace(
-            `<span style="color: #0095ff; text-decoration: none">Source</span>`,
-            `<a href="https://github.com/naturecodevoid/RandomTextGenerator" target="_blank" style="color: #0095ff; text-decoration: none">Source</a>`,
-        );
-    });
-}
+    $("timestamp")!.innerHTML = $("timestamp")!.innerHTML.replace(
+        `<span style="color: #0095ff; text-decoration: none">Source</span>`,
+        `<a href="https://github.com/naturecodevoid/timestamp" target="_blank" style="color: #0095ff; text-decoration: none">Source</a>`,
+    );
+    $("randomtext")!.innerHTML = $("randomtext")!.innerHTML.replace(
+        `<span style="color: #0095ff; text-decoration: none">Source</span>`,
+        `<a href="https://github.com/naturecodevoid/RandomTextGenerator" target="_blank" style="color: #0095ff; text-decoration: none">Source</a>`,
+    );
+});
 
 export {};
