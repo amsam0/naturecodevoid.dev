@@ -1,0 +1,37 @@
+{
+    "extends": "@tsconfig/recommended/tsconfig.json",
+    "include": ["src", "types"],
+    "exclude": [],
+    "compilerOptions": {
+        "outDir": "src",
+        "target": "esnext",
+        "lib": ["es5", "es2015", "dom"],
+        "module": "esnext",
+        "moduleResolution": "node",
+        "alwaysStrict": true,
+        "downlevelIteration": true,
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "strict": true,
+        "strictBindCallApply": true,
+        "strictFunctionTypes": true,
+        "strictNullChecks": true,
+        "strictPropertyInitialization": true,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitReturns": true,
+        "noUnusedLocals": true,
+        "noEmitOnError": true,
+        "experimentalDecorators": true,
+        "resolveJsonModule": true,
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": "./",
+        "noEmit": true,
+        "isolatedModules": true,
+        "importsNotUsedAsValues": "error",
+        /* Additional Options */
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "useDefineForClassFields": true,
+        "jsx": "preserve"
+    }
+}

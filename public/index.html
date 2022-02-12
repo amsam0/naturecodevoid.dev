@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <meta property="og:title" content="𝚗𝚊𝚝𝚞𝚛𝚎𝚌𝚘𝚍𝚎𝚟𝚘𝚒𝚍.𝚍𝚎𝚟" />
+        <meta property="og:description" content="naturecodevoid's website" />
+        <meta property="og:url" content="https://naturecodevoid.dev" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+
+        <!-- https://gist.github.com/lancejpollard/1978404 -->
+        <meta name="description" content="naturecodevoid's website" />
+        <meta name="owner" content="naturecodevoid" />
+        <meta name="url" content="https://naturecodevoid.dev" />
+        <meta name="category" content="developer" />
+
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+
+        <title>𝚗𝚊𝚝𝚞𝚛𝚎𝚌𝚘𝚍𝚎𝚟𝚘𝚒𝚍.𝚍𝚎𝚟</title>
+
+        <link href="/normalize.css" rel="stylesheet" type="text/css" media="screen" />
+        <link href="/index.css" rel="stylesheet" type="text/css" media="screen" />
+
+        <script type="module" src="/index.js"></script>
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+            integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+            crossorigin="anonymous"
+        />
+        <link href="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="bg"></div>
+
+        <span id="main" style="display: block"
+            ><section class="centered">
+                <h1 class="header" data-aos="fade-left">Hi, I'm naturecodevoid.</h1>
+            </section>
+
+            <section class="centered">
+                <h1 class="text" data-aos="fade-right">I like coding and gaming.</h1>
+                <h1 class="text" style="margin-bottom: 24px" data-aos="fade-left" data-aos-delay="150">
+                    My favorite languages are<br />
+                    <a
+                        style="
+                            color: #0094ff;
+                            text-decoration: none;
+                            /* background-color: rgba(255, 255, 255, 0.95);
+                        border-radius: 20px;
+                        padding-right: 0.4vw;
+                        padding-left: 0.6vw; */
+                        "
+                        href="https://www.typescriptlang.org/"
+                        target="_blank"
+                        >TypeScript</a
+                    >,
+                    <a
+                        style="
+                            color: #f9a302;
+                            text-decoration: none;
+                            /* background-color: rgba(255, 255, 255, 0.95);
+                        border-radius: 20px;
+                        padding-right: 0.4vw;
+                        padding-left: 0.6vw; */
+                        "
+                        href="https://www.oracle.com/java/"
+                        target="_blank"
+                        >Java</a
+                    >
+                    and
+                    <a
+                        style="
+                            color: #5db4f0;
+                            text-decoration: none;
+                            /* background-color: rgba(255, 255, 255, 0.95);
+                        border-radius: 20px;
+                        padding-right: 0.4vw;
+                        padding-left: 0.6vw; */
+                        "
+                        href="https://www.dart.dev/"
+                        target="_blank"
+                        >Dart</a
+                    >.
+                </h1>
+            </section>
+
+            <section class="centered">
+                <h1 class="header" data-aos="fade-left">
+                    <a style="text-decoration: none; cursor: pointer" onclick="portfolio()">
+                        Portfolio <i class="fas fa-arrow-right" style="transform: scale(0.9)"></i
+                    ></a>
+                </h1>
+                <h1 class="header" data-aos="fade-right">
+                    <a style="text-decoration: none; cursor: pointer" onclick="tools()">
+                        Tools <i class="fas fa-arrow-right" style="transform: scale(0.9)"></i
+                    ></a>
+                </h1>
+            </section>
+
+            <section class="centered" id="contact">
+                <div class="grid">
+                    <a id="discord" onclick="discord()" style="cursor: pointer" class="social" data-aos="fade-down"
+                        ><i class="fab fa-discord social-end"></i>
+                    </a>
+                    <a
+                        id="github"
+                        href="https://github.com/naturecodevoid"
+                        class="social"
+                        target="_blank"
+                        data-aos="fade-left"
+                    >
+                        <i class="fab fa-github social-end"></i>
+                    </a>
+                </div>
+                <div class="grid">
+                    <a
+                        id="twitter"
+                        href="https://twitter.com/naturecodevoid"
+                        class="social"
+                        target="_blank"
+                        data-aos="fade-right"
+                    >
+                        <i class="fab fa-twitter social-end"></i>
+                    </a>
+                    <a
+                        id="youtube"
+                        href="https://www.youtube.com/channel/UCZQx9rvLIazNHyj83yDjUMg"
+                        class="social"
+                        target="_blank"
+                        data-aos="fade-up"
+                    >
+                        <i class="fab fa-youtube social-end"></i>
+                    </a>
+                </div></section
+        ></span>
+
+        <span id="portfolio" style="display: none"
+            ><section class="centered">
+                <h1 class="header" data-aos="fade-left" style="margin-block-end: 0px; margin-block-start: 0px">
+                    Portfolio
+                </h1>
+                <h1 class="header" data-aos="fade-right" style="font-size: 1.75vw; margin-block-start: 0.5em">
+                    <a style="text-decoration: none; cursor: pointer" onclick="main()">
+                        <i class="fas fa-arrow-left" style="transform: scale(0.9)"></i> Back to home
+                    </a>
+                </h1>
+
+                <h1
+                    class="header"
+                    data-aos="fade-left"
+                    data-aos-delay="100"
+                    style="font-size: 1.5vw; text-align: center"
+                >
+                    Most of the stuff I work on is closed<br />source, but here are a some of my open source projects.
+                </h1>
+
+                <div class="grid">
+                    <a
+                        href="https://timestamp.naturecodevoid.dev/"
+                        target="_blank"
+                        class="card"
+                        data-aos="fade-up"
+                        data-aos-delay="200"
+                    >
+                        <h2 style="color: #0095ff; text-decoration: none">timestamp</h2>
+                        <p id="timestamp">
+                            A very simple unix timestamp viewer and editor (<span
+                                style="color: #0095ff; text-decoration: none"
+                                >Source</span
+                            >)
+                        </p>
+                    </a>
+                    <a
+                        href="https://randomtext.naturecodevoid.dev/"
+                        target="_blank"
+                        class="card"
+                        data-aos="fade-up"
+                        data-aos-delay="200"
+                        style="width: 40%"
+                    >
+                        <h2 style="color: #0095ff; text-decoration: none">RandomTextGenerator</h2>
+                        <p id="randomtext">
+                            A script to generate a random sequence of characters. More info in README, has javascript
+                            and python versions (<span style="color: #0095ff; text-decoration: none">Source</span>)
+                        </p>
+                    </a>
+                </div>
+            </section>
+
+            <section class="centered">
+                <div class="grid">
+                    <a
+                        id="discord"
+                        onclick="discord()"
+                        style="cursor: pointer"
+                        class="social"
+                        target="_blank"
+                        data-aos="fade-down"
+                    >
+                        <i class="fab fa-discord social-end"></i>
+                    </a>
+                    <a
+                        id="github"
+                        href="https://github.com/naturecodevoid"
+                        class="social"
+                        target="_blank"
+                        data-aos="fade-left"
+                    >
+                        <i class="fab fa-github social-end"></i>
+                    </a>
+                </div>
+                <div class="grid">
+                    <a
+                        id="twitter"
+                        href="https://twitter.com/naturecodevoid"
+                        class="social"
+                        target="_blank"
+                        data-aos="fade-right"
+                    >
+                        <i class="fab fa-twitter social-end"></i>
+                    </a>
+                    <a
+                        id="youtube"
+                        href="https://www.youtube.com/channel/UCZQx9rvLIazNHyj83yDjUMg"
+                        class="social"
+                        target="_blank"
+                        data-aos="fade-up"
+                    >
+                        <i class="fab fa-youtube social-end"></i>
+                    </a>
+                </div>
+            </section>
+        </span>
+
+        <span id="tools" style="display: none"
+            ><section class="centered">
+                <h1 class="header" data-aos="fade-left" style="margin-block-end: 0px; margin-block-start: 0px">
+                    Tools
+                </h1>
+                <h1
+                    class="header"
+                    data-aos="fade-right"
+                    style="font-size: 1.75vw; margin-block-start: 0.5em; margin-block-end: 0.5em"
+                >
+                    <a style="text-decoration: none; cursor: pointer" onclick="main()">
+                        <i class="fas fa-arrow-left" style="transform: scale(0.9)"></i> Back to home
+                    </a>
+                </h1>
+
+                <h1 class="header" data-aos="fade-left" data-aos-delay="100" style="font-size: 1.5vw">
+                    These are most of the basic tools I use for development.
+                </h1>
+
+                <ul>
+                    <li data-aos="fade-right" data-aos-delay="250">
+                        <a
+                            href="https://code.visualstudio.com/"
+                            target="_blank"
+                            style="color: #65bfff; text-decoration: none"
+                            >Visual Studio Code</a
+                        >
+                        is my code editor
+                    </li>
+                    <li data-aos="fade-left" data-aos-delay="500">
+                        I use
+                        <a
+                            href="https://desktop.github.com/"
+                            target="_blank"
+                            style="color: #65bfff; text-decoration: none"
+                            >GitHub Desktop</a
+                        >
+                        for almost all my
+                        <a href="https://git-scm.com/" target="_blank" style="color: #65bfff; text-decoration: none"
+                            >Git</a
+                        >
+                        needs
+                    </li>
+                    <li data-aos="fade-right" data-aos-delay="750">
+                        I use bash and
+                        <a
+                            href="https://github.com/PowerShell/PowerShell"
+                            target="_blank"
+                            style="color: #65bfff; text-decoration: none"
+                            >PowerShell</a
+                        >
+                        for my terminal
+                    </li>
+                </ul>
+
+                <h1 class="header" data-aos="fade-left" data-aos-delay="1000" style="font-size: 1.5vw">
+                    Some more really useful tools:
+                </h1>
+
+                <ul>
+                    <li data-aos="fade-right" data-aos-delay="1250">
+                        I use
+                        <a
+                            href="https://classic.yarnpkg.com/"
+                            target="_blank"
+                            style="color: #65bfff; text-decoration: none"
+                            >yarn</a
+                        >
+                        for node.js package management
+                    </li>
+                    <li data-aos="fade-left" data-aos-delay="1500">
+                        <a
+                            href="https://github.com/tkellogg/dura"
+                            target="_blank"
+                            style="color: #65bfff; text-decoration: none"
+                            >dura</a
+                        >
+                        is a very useful tool that makes it much <br />
+                        harder to lose work while using git
+                    </li>
+                    <li data-aos="fade-right" data-aos-delay="1750">
+                        I strongly recommend
+                        <a
+                            href="https://github.com/nvm-sh/nvm"
+                            target="_blank"
+                            style="color: #65bfff; text-decoration: none"
+                            >nvm</a
+                        >
+                        and
+                        <a
+                            href="https://github.com/shyiko/jabba"
+                            target="_blank"
+                            style="color: #65bfff; text-decoration: none"
+                            >jabba</a
+                        >
+                        <br />
+                        for managing node.js and java versions
+                    </li>
+                    <li data-aos="fade-left" data-aos-delay="2000">
+                        <a
+                            href="https://github.com/rupa/z"
+                            target="_blank"
+                            style="color: #65bfff; text-decoration: none"
+                            >z</a
+                        >
+                        is a very useful script for changing directories
+                    </li>
+                </ul>
+            </section>
+
+            <section class="centered">
+                <div class="grid">
+                    <a
+                        id="discord"
+                        onclick="discord()"
+                        style="cursor: pointer"
+                        class="social"
+                        target="_blank"
+                        data-aos="fade-down"
+                    >
+                        <i class="fab fa-discord social-end"></i>
+                    </a>
+                    <a
+                        id="github"
+                        href="https://github.com/naturecodevoid"
+                        class="social"
+                        target="_blank"
+                        data-aos="fade-left"
+                    >
+                        <i class="fab fa-github social-end"></i>
+                    </a>
+                </div>
+                <div class="grid">
+                    <a
+                        id="twitter"
+                        href="https://twitter.com/naturecodevoid"
+                        class="social"
+                        target="_blank"
+                        data-aos="fade-right"
+                    >
+                        <i class="fab fa-twitter social-end"></i>
+                    </a>
+                    <a
+                        id="youtube"
+                        href="https://www.youtube.com/channel/UCZQx9rvLIazNHyj83yDjUMg"
+                        class="social"
+                        target="_blank"
+                        data-aos="fade-up"
+                    >
+                        <i class="fab fa-youtube social-end"></i>
+                    </a>
+                </div></section
+        ></span>
+
+        <div id="discord-modal" class="modal">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <br />
+                <h2>My discord tag is <code>naturecodevoid#6253</code>.</h2>
+                <br />
+                <h2>
+                    Unfortunately I have friend requests disabled for "Everyone" to prevent spam. If you would like to
+                    add me, please join a large public server that I am in such as the
+                    <a href="https://discord.com/invite/ninjakiwi" target="_blank" style="color: #0094ff">Ninja Kiwi</a>
+                    or the
+                    <a href="https://discord.com/invite/lunarclient" target="_blank" style="color: #0094ff"
+                        >Lunar Client</a
+                    >
+                    discord servers. You can leave as soon as you send me a friend request.
+                </h2>
+                <br />
+                <h2>
+                    If this is not an option, consider contacting me via
+                    <a id="twitter" href="https://twitter.com/naturecodevoid" target="_blank" style="color: #0094ff">
+                        Twitter</a
+                    >. I may take longer than usual to respond as I am not very active on Twitter.
+                </h2>
+            </div>
+        </div>
+
+        <script src="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.js"></script>
+        <script id="init">
+            AOS.init({
+                offset: 120,
+                duration: 800,
+                easing: "ease-in-out",
+                mirror: true,
+            });
+        </script>
+    </body>
+</html>

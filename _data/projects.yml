@@ -1,9 +1,0 @@
-- name: HypixelUtils - Minecraft mod with random stuff.
-  url: /projects/hypixelutils
-
-- name: RandomTextGenerator - A script to generate a random sequence of characters. Very customizable.
-  url: /projects/randomtextgenerator
-
-- name: ct.js (by CosmoMyzrailGorynych) - An easy to use, 2D game engine. &nbsp;<i class="fas fa-external-link-alt"></i>
-  url: https://ctjs.rocks
-  target_blank: true

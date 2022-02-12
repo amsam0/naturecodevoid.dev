@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /contact
+Disallow: /discord
+Disallow: /portfolio
+Disallow: /tools
+Disallow: /404.html
+Disallow: /contact.html
+Disallow: /discord.html
+Disallow: /portfolio.html
+Disallow: /tools.html
