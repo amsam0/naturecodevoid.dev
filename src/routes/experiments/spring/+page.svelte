@@ -21,6 +21,8 @@
         document.body.style.overflow = "hidden";
 
         coords.subscribe(({ x, y }) => {
+            if (!circles || !("children" in circles)) return;
+
             for (let i = 0; i < circles.children.length; i++) {
                 const element = circles.children.item(i)!;
                 setTimeout(() => {
