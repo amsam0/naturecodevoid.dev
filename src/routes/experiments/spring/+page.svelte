@@ -1,8 +1,7 @@
 <!-- based on https://svelte.dev/examples/spring -->
 <script lang="ts">
     import { onDestroy, onMount } from "svelte";
-    import { cubicInOut } from "svelte/easing";
-    import { spring, tweened } from "svelte/motion";
+    import { spring } from "svelte/motion";
 
     const coords = spring(
         { x: 0, y: 0 },
