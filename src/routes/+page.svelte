@@ -1,5 +1,6 @@
 <script lang="ts">
     function showDiscordTag(this: HTMLAnchorElement) {
+        if (this.textContent!.includes("(")) return;
         this.textContent += ` (if the link doesn't work, my tag is ${atob(atob("Ym1GMGRYSmxZMjlrWlhadmFXUWpOakkxTXc9PQ=="))})`;
     }
 </script>
